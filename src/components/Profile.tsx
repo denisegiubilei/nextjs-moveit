@@ -10,10 +10,7 @@ function Profile() {
       <div>
         <strong>Denise Giubilei</strong>
         <p>
-          <img
-            src="icons/level.svg"
-            alt="Ícone de level - Seta para cima"
-          />
+          <img src="icons/level.svg" alt="Ícone de level - Seta para cima" />
           Level 1
         </p>
       </div>
