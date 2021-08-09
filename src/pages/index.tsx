@@ -1,12 +1,15 @@
+import React from 'react';
+import Head from 'next/head';
+
 import { CompletedChallenges } from '../components/CompletedChallenges';
 import { CountDown } from '../components/CountDown';
 import { ExperienceBar } from '../components/ExperienceBar';
 import { Profile } from '../components/Profile';
+import { ChallengeBox } from '../components/ChallengeBox';
 
-import Head from 'next/head';
+import { CountdownContextProvider } from '../contexts/CountdownContext';
 
 import styles from '../styles/pages/Home.module.css';
-import { ChallengeBox } from '../components/ChallengeBox';
 
 export default function Home() {
   return (
@@ -14,17 +17,21 @@ export default function Home() {
       <Head>
         <title>Início | move.it</title>
       </Head>
+
       <ExperienceBar />
-      <section>
-        <div>
-          <Profile />
-          <CompletedChallenges />
-          <CountDown />
-        </div>
-        <div>
-          <ChallengeBox />
-        </div>
-      </section>
+
+      <CountdownContextProvider>
+        <section>
+          <div>
+            <Profile />
+            <CompletedChallenges />
+            <CountDown />
+          </div>
+          <div>
+            <ChallengeBox />
+          </div>
+        </section>
+      </CountdownContextProvider>
     </div>
   );
 }
