@@ -4,6 +4,7 @@ Countdown app with reminders to exercise!
 
 Try it: https://moveit-gpxaejdp2-giubileidenise-gmailcom.vercel.app/
 
+![image](https://user-images.githubusercontent.com/5325962/129647293-12e5f4f7-71fe-483b-8447-5ed0f63be61c.png)
 
 
 Project developed during the Next Level Week, presented by @Rocketseat
