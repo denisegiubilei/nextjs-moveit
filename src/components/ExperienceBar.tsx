@@ -9,7 +9,6 @@ function ExperienceBar() {
 
   const xpPercent = `${(currentExperience * 100) / experienceToNextLevel}%`;
 
-  console.log(currentExperience);
   return (
     <header className={styles.experienceBar}>
       <span>0</span>
